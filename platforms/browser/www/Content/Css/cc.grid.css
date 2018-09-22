@@ -1,0 +1,51 @@
+/* TREEVIEW */
+.cc-treeview li{white-space: nowrap;}
+.cc-tabela-link-tree-view{color:#333;cursor:pointer;}
+.cc-treeview-btn{cursor:pointer;}
+
+/* TABLE */
+.cc-table-xs{font-size:8px !important}
+.cc-table-xs td{padding:2px !important;font-size:8px !important}
+.cc-grd-no-search .cc-grd-row-header{display: none !important;}
+
+/* TABLE */
+.cc-table-xs{font-size:8px !important}
+.cc-table-xs td{padding:2px !important;font-size:8px !important}
+.cc-grd-no-search .cc-grd-row-header{display: none !important;}
+
+.table td{position: relative;}
+
+.cc-tabela-tr-selecionada td{background: #fff391 !important;}
+
+.cc-td-overlay{position: absolute;top:0;left: 0;bottom:0;left:0;background: rgba(0,0,0,.2);width: 100%;height: 100%;}
+
+/* TREEVIEW */
+.cc-tabela-link-tree-view{color:#333;cursor:pointer;}
+.cc-treeview-btn{cursor:pointer;}
+.cc-btn-tree{font-size: 12px;line-height: normal;}
+
+ tr.cc-grd-tree-nivel-1 td .cc-btn-tree{margin-left: 10px;}
+ tr.cc-grd-tree-nivel-2 td .cc-btn-tree{margin-left: 20px;}
+ tr.cc-grd-tree-nivel-3 td .cc-btn-tree{margin-left: 30px;}
+ tr.cc-grd-tree-nivel-4 td .cc-btn-tree{margin-left: 40px;}
+ tr.cc-grd-tree-nivel-5 td .cc-btn-tree{margin-left: 50px;}
+ tr.cc-grd-tree-nivel-6 td .cc-btn-tree{margin-left: 60px;}
+ tr.cc-grd-tree-nivel-7 td .cc-btn-tree{margin-left: 70px;}
+ tr.cc-grd-tree-nivel-8 td .cc-btn-tree{margin-left: 80px;}
+ tr.cc-grd-tree-nivel-9 td .cc-btn-tree{margin-left: 90px;}
+ tr.cc-grd-tree-nivel-10 td .cc-btn-tree{margin-left: 100px;}
+ tr.cc-grd-tree-nivel-10 td .cc-btn-tree{margin-left: 110px;}
+
+tr.cc-grd-tree-nivel-11 td{background-color:rgba(168,168,168,.7)}
+tr.cc-grd-tree-nivel-10 td{background-color:rgba(176,176,176,.7)}
+tr.cc-grd-tree-nivel-9 td{background-color:rgba(184,184,184,.7)}
+tr.cc-grd-tree-nivel-8 td{background-color:rgba(192,192,192,.7)}
+tr.cc-grd-tree-nivel-7 td{background-color:rgba(200,200,200,.7)}
+tr.cc-grd-tree-nivel-6 td{background-color:rgba(208,208,208,.7)}
+tr.cc-grd-tree-nivel-5 td{background-color:rgba(216,216,216,.7)}
+tr.cc-grd-tree-nivel-4 td{background-color:rgba(224,224,224,.7)}
+tr.cc-grd-tree-nivel-3 td{background-color:rgba(232,232,232,.7)}
+tr.cc-grd-tree-nivel-2 td{background-color:rgba(240,240,240,.7)}
+tr.cc-grd-tree-nivel-1 td{background-color:rgba(248,248,248,.5)}
+
+

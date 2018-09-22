@@ -1,0 +1,112 @@
+/* CSS DEV */
+
+/* DEBUG */
+.cc-debug .cc-frm{border:2px solid #1e88e5 !important;padding:20px !important;}
+.cc-debug .cc-fme{border:2px solid #e53935 !important;padding:10px !important;}
+.cc-debug .cc-say{border:2px solid #8e24aa !important;padding:10px !important;}
+
+.cc-debug .cc-inp{border:2px solid #567d2e !important;padding:2px !important;}
+.cc-debug .cc-mnu-item{border:2px solid #fb8c00 !important;}
+.cc-debug .cc-btn{border:2px solid #8e24aa !important;padding:2px !important;}
+.cc-debug .cc-btn-col{border:2px solid #8e24aa !important;padding:10px !important;}
+
+.cc-debug .cc-inp-regra{background: #96c267}
+.cc-debug .cc-fme-regra{background: #ea605d}
+.cc-debug .cc-grd-regra{background: #fff391}
+.cc-debug .cc-btn-regra{background: #a44fbb}
+
+.cc-debug .cc-fme.d-none{border:2px dashed #e53935 !important;padding:2px !important;}
+.cc-debug .cc-inp.d-none{border:2px dashed #567d2e !important;padding:2px !important;}
+.cc-debug .cc-btn.d-none{border:2px dashed #8e24aa !important;padding:2px !important;}
+.cc-debug .cc-say.d-none{border:2px dashed #8e24aa !important;padding:2px !important;}
+.cc-debug .cc-grd.d-none{border:2px dashed #b19725 !important;padding:2px !important;}
+.cc-debug .cc-table{background: #fff !important;padding:5px;border: 5px solid #b19725 !important;min-height: 20px !;display: block !important;}
+
+.cc-debug hr{height: 20px !important;background: #567d2e !important}
+
+/* HIDE/SHOW */
+.cc-hidden-show .cc-grd.d-none{display:inline-block !important;}
+.cc-hidden-show .cc-btn.d-none{display:inline-block !important;}
+.cc-hidden-show .cc-fme.d-none{display:inline-block !important;}
+.cc-hidden-show .cc-inp.d-none{display:inline-block !important;}
+.cc-hidden-show .cc-inp.d-none{display:inline-block !important;}
+.cc-hidden-show .cc-say.d-none{display:inline-block !important;}
+
+/* CONTEXT MENU */
+.context-menu-root{z-index: 1000 !important;}
+
+/* IDE COLORS */
+a[data-grd-inp-val="FRM"],
+a[data-grd-inp-val="Frm"],
+a[data-grd-inp-val="frm"]{background: #6f42c1 !important;color:#fff;}
+
+a[data-grd-inp-val="FME"],
+a[data-grd-inp-val="Fme"],
+a[data-grd-inp-val="fme"]{background: #105888 !important;color:#fff;}
+
+a[data-grd-inp-val="MNU"],
+a[data-grd-inp-val="Mnu"],
+a[data-grd-inp-val="mnu"]{background: #e83e8c !important;color:#fff;}
+
+a[data-grd-inp-val="FLD"],
+a[data-grd-inp-val="Fld"],
+a[data-grd-inp-val="fld"]{background: #17a2b8 !important;color:#fff;}
+
+a[data-grd-inp-val="INP"],
+a[data-grd-inp-val="Inp"],
+a[data-grd-inp-val="inp"]{background: #ffc107 !important;color:#000;}
+
+a[data-grd-inp-val="BTN"],
+a[data-grd-inp-val="Btn"],
+a[data-grd-inp-val="btn"]{background: #28a745 !important;color:#fff;}
+
+a[data-grd-inp-val="GRD"],
+a[data-grd-inp-val="Grd"],
+a[data-grd-inp-val="grd"]{background: #dc3545 !important;color:#fff;}
+
+a[data-grd-inp-val="HTM"],
+a[data-grd-inp-val="Htm"],
+a[data-grd-inp-val="htm"]{background: #fd7e14 !important;color:#fff;}
+
+a[data-grd-inp-val="TAB"],
+a[data-grd-inp-val="Tab"],
+a[data-grd-inp-val="tab"]{background: #fd7e14 !important;color:#fff;}
+
+a[data-grd-inp-val="COL"],
+a[data-grd-inp-val="Col"],
+a[data-grd-inp-val="col."]{background: #004c4c !important;color:#fff;}
+
+a[data-grd-inp-val="FRM"],
+a[data-grd-inp-val="Frm"],
+a[data-grd-inp-val="frm"],
+a[data-grd-inp-val="FME"],
+a[data-grd-inp-val="Fme"],
+a[data-grd-inp-val="fme"],
+a[data-grd-inp-val="MNU"],
+a[data-grd-inp-val="Mnu"],
+a[data-grd-inp-val="mnu"],
+a[data-grd-inp-val="FLD"],
+a[data-grd-inp-val="Fld"],
+a[data-grd-inp-val="fld"],
+a[data-grd-inp-val="INP"],
+a[data-grd-inp-val="Inp"],
+a[data-grd-inp-val="inp"],
+a[data-grd-inp-val="BTN"],
+a[data-grd-inp-val="Btn"],
+a[data-grd-inp-val="btn"],
+a[data-grd-inp-val="GRD"],
+a[data-grd-inp-val="Grd"],
+a[data-grd-inp-val="grd"],
+a[data-grd-inp-val="HTM"],
+a[data-grd-inp-val="Htm"],
+a[data-grd-inp-val="htm"],
+a[data-grd-inp-val="TAB"],
+a[data-grd-inp-val="Tab"],
+a[data-grd-inp-val="tab"],
+a[data-grd-inp-val="COL"],
+a[data-grd-inp-val="Col"],
+a[data-grd-inp-val="col"]{padding:4px;font-size:11px;}
+
+#cc-ace-editor{height: 400px;}
+.cc-dev-trace-line-count{color:#ccc;}
+.cc-dev-ide-propriedades-btn-busca-obj{margin:22px 0 0 -11px;}

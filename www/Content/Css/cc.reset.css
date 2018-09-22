@@ -1,0 +1,10 @@
+/* RESET */
+
+/* DEFAULT */
+a, button{cursor: pointer}
+a:hover, button:hover{cursor: pointer}
+
+/* FORM */
+label{font-weight:400;}
+
+

@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<!-- VARIAVEL PARA CRIAR O TIMESTAMP -->
+<html lang="pt-br">
+  <head>
+    <!-- HEAD: TITULO -->
+    <title>Gestão Cidades Inteligentes</title>
+    <!-- HEAD: CHARSET -->
+    <meta charset="utf-8">
+    <!-- HEAD: SEO -->
+    <meta Name="robots" content="noindex,nofollow">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- HEAD: VIEWPORT -->
+    <meta required="required" name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <!-- HEAD: CSS > FONT > FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- HEAD: CSS > FONT > OPEN SANS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- HEAD: CSS > PLUGIN > MODAL -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/jquery-modal-master/cc.jquery.modal.css">
+    <!-- HEAD: CSS > PLUGIN > ALERTIFY -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/alertifyjs/css/alertify.css">
+    <!-- HEAD-->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/jquery.contextmenu/cc.jquery.contextMenu.css">
+    <!-- HEAD: CSS > PLUGIN > DATEPICKER  -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+    <!-- HEAD: CSS > PLUGIN > SELECT2  -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/select2/css/cc.select2.css">
+    <!-- HEAD: CSS > PLUGIN > TIPSO  -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/tipso/tipso.css">
+    <!-- HEAD: CSS > PLUGIN > DATATABLE -->
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/DataTables/DataTables-1.10.16/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/DataTables/FixedHeader-3.1.3/css/fixedHeader.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Resources/DataTables/Responsive-2.2.1/css/responsive.bootstrap.css">
+    <!-- HEAD: CSS > CCASE BASE -->
+    <link rel="stylesheet" href="/Content/Css/bootstrap/cc.bootstrap3.css">
+    <link rel="stylesheet" href="/Content/Css/bootstrap/cc.bootstrap4.css">
+    <!-- HEAD: CSS > CCASE DEV -->
+    <link rel="stylesheet" href="/Content/Css/cc.dev.css">
+    <!-- HEAD: CSS > CCASE DEFAULT -->
+    <link rel="stylesheet" href="/Content/Css/cc.reset.css">
+    <link rel="stylesheet" href="/Content/Css/cc.util.css">
+    <link rel="stylesheet" href="/Content/Css/cc.color.css">
+    <link rel="stylesheet" href="/Content/Css/cc.coluna.css">
+    <!-- HEAD: CSS > CCASE OBJETOS -->
+    <link rel="stylesheet" href="/Content/Css/cc.menu.css">
+    <link rel="stylesheet" href="/Content/Css/cc.button.css">
+    <link rel="stylesheet" href="/Content/Css/cc.grid.css">
+    <link rel="stylesheet" href="/Content/Css/cc.folder.css">
+    <!-- HEAD: CSS > CCASE BOOTSTRAP -->
+    <link rel="stylesheet" href="/Content/Css/bootstrap/cc.bootstrap.custom.css">
+    <!-- HEAD: CSS > CCASE PRINT -->
+    <link rel="stylesheet" href="/Content/Css/cc.print.css">
+    <!-- HEAD: CSS > PROJETO -->
+    <link rel="stylesheet" href="/Content/Css/cc.layout.css">
+    <link rel="stylesheet" href="/Content/Css/gci.css">
+    <!-- <link rel="stylesheet" href="/Content/Css/cc.css"> -->
+    <!-- HEAD: SCRIPTS  -->
+    <!-- SCRIPTS: JQUERY -->
+    <script src="/Content/Resources/jquery/jquery-3.3.1.min.js"></script>
+    <!-- SCRIPTS: BOOTSTRAP -->
+    <script src="/Content/Resources/bootstrap/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+    <!-- SCRIPT CHART -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body id="cc-body" name="cc-body">
+    @RenderBody()
+    <!-- BODY: RENDER CONTENT PAGE -->
+    <!-- SCRIPTS: PLUGIN > MOMENT -->
+    <script src="/Content/Resources/moment.js/moment.js"></script>
+    <script src="/Content/Resources/moment.js/moment-with-locales.js"></script>
+    <!-- SCRIPTS: PLUGIN > ALERTIFY -->
+    <script src="/Content/Resources/alertifyjs/alertify.js"></script>
+    <script src="/Content/Resources/iziToast/js/iziToast.js"></script>
+    <!-- SCRIPTS: PLUGIN > MODAL -->
+    <script src="/Content/Resources/jquery-modal-master/cc.jquery.modal.js"></script>
+    <!-- SCRIPTS: MASK > MASK -->
+    <script src="/Content/Resources/jquery.mask/jquery.mask.min.js"></script>
+    <script src="/Content/Resources/jquery.maskMoney/jquery.maskMoney.js"></script>
+    <!-- SCRIPTS: PLUGIN > FORMATACAO DE NUMERO -->
+    <script src="/Content/Resources/jquery.number/jquery.number.js"></script>
+    <!-- SCRIPTS: PLUGIN > FORMATACAO DE NUMERO -->
+    <script src="/Content/Resources/tipso/tipso.js"></script>
+    <!-- SCRIPTS: PLUGIN > PLUGINS -->
+    <script src="/Content/Resources/DataTables/DataTables-1.10.16/js/jquery.dataTables.js"></script>
+    <script src="/Content/Resources/DataTables/DataTables-1.10.16/js/cc.dataTables.bootstrap.js"></script>
+    <script src="/Content/Resources/DataTables/FixedHeader-3.1.3/js/dataTables.fixedHeader.js"></script>
+    <script src="/Content/Resources/DataTables/Responsive-2.2.1/js/dataTables.responsive.js"></script>
+    <!-- SCRIPTS: PLUGIN > AUTOTAB --> 
+    <script type="text/javascript" src="/Content/Resources/jquery.autotab/jquery.autotab.min.js"></script>
+    <!-- SCRIPTS: PLUGIN > SELECT2 --> 
+    <script type="text/javascript" src="/Content/Resources/select2/js/select2.full.js"></script>
+    <script type="text/javascript" src="/Content/Resources/select2/js/i18n/pt-BR.js"></script>
+    <!-- SCRIPTS: PLUGIN > CONTEXT MENU --> 
+    <script type="text/javascript" src="/Content/Resources/jquery.contextmenu/jquery.contextMenu.js"></script>
+    <script type="text/javascript" src="/Content/Resources/jquery.contextmenu/jquery.ui.position.js"></script>
+    <!-- SCRIPTS: PLUGIN > DATEPICKER  -->
+    <script src="/Content/Resources/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/Content/Resources/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <!-- SCRIPTS VIEWS > INDICADORES -->
+    <script src="/Scripts/Views/cc.indicadores.js"></script> 
+    <!-- SCRIPTS VIEWS > BI -->
+    <!-- <script src="/Scripts/Views/bi.js"></script> -->
+    <!-- SCRIPTS: CCASE > MATRIZ -->
+    <script src="/Scripts/cc.m.js"></script>
+    <!-- SCRIPTS: CCASE > OBJ -->
+    <script src="/Scripts/cc.obj.js"></script>
+    <!-- SCRIPTS: CCASE > PRP -->
+    <script src="/Scripts/cc.prp.js"></script>
+    <!-- SCRIPTS: CCASE > FUNCTIONS -->
+    <script src="/Scripts/cc.fn.js"></script>
+    <!-- SCRIPTS: CCASE > PLUGINS -->
+    <script src="/Scripts/cc.plugin.js"></script>
+    
+    <!-- SCRIPTS: CCASE > OAUTH -->
+    <script src="/Scripts/cc.oauth.js"></script>
+    <!-- SCRIPTS: CCASE > FUNCOES E UTILIDADES -->
+    <script src="/Scripts/cc.util.js"></script>
+    <!-- SCRIPTS: CCASE > DOMINIOS -->
+    <script src="/Scripts/cc.dom.js"></script>
+    <!-- SCRIPTS: CCASE > BUTTONS -->
+    <script src="/Scripts/cc.rep.js"></script>
+    <script src="/Scripts/cc.r.js"></script>
+    <!-- SCRIPTS: CCASE > BUTTONS -->
+    <script src="/Scripts/cc.btn.js"></script>
+    <!-- SCRIPTS: CCASE > SAY -->
+    <script src="/Scripts/cc.say.js"></script>
+    <!-- SCRIPTS: CCASE > INPUTS -->
+    <script src="/Scripts/cc.inp.js"></script>
+    <!-- SCRIPTS: CCASE > GRID -->
+    <script src="/Scripts/cc.grd.js"></script>
+    <!-- SCRIPTS: CCASE > HTML -->
+    <script src="/Scripts/cc.htm.js"></script>
+    <!-- SCRIPTS: CCASE > FOLDER -->
+    <script src="/Scripts/cc.fld.js"></script>
+    <!-- SCRIPTS: CCASE > FRAMES -->
+    <script src="/Scripts/cc.fme.js"></script>
+    <!-- SCRIPTS: CCASE > FORM -->
+    <script src="/Scripts/cc.frm.js"></script>
+    <!-- SCRIPTS: CCASE > MENU -->
+    <script src="/Scripts/cc.mnu.js"></script>
+    <!-- SCRIPTS: CCASE > APIS -->
+    <script src="/Scripts/cc.api.js"></script>
+    <!-- SCRIPTS: CCASE > DEBUG AND DEV FUNCTIONS -->
+    <script src="/Scripts/cc.dev.js"></script>
+    <!-- SCRIPTS: CCASE > INDICADORES -->
+    <script src="/Scripts/cc.ind.js"></script>
+    <!-- SCRIPTS: CCASE > START -->
+    <script src="/Scripts/cc.start.js"></script>
+
+    <!-- SCRIPTS: CCASE > JSON DE CONFIGURACOES -->
+    <script src="/Scripts/cc.config.js"></script>
+  </body>
+</html>

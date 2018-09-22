@@ -1,0 +1,82 @@
+<!-- PROPRIEDADES -->
+<div name="cc-dev-ide-grd-importar" id="cc-dev-ide-grd-importar" class="modal-ccase-obj-100 col-md-36 bg-light d-none">
+
+  <!-- TITULO -->
+  <div class="row">
+    <h5 class="col-md-36 text-uppercase border-bottom pt-2 pb-2">Importar</h5>
+  </div>
+
+  <!-- form -->
+  <div class="row">
+    <!-- NOME DO GRD -->
+    <div class="col-md-16">
+      <div class="form-group">
+        <label for="">GRID <small>(OBJ_NOME E OBJ_REFERENCIA_DATAGRID):</small></label>
+        <input type="text" id="cc-dev-ide-grd-importar-obj-nome" name="cc-dev-ide-grd-importar-obj-nome" readonly="readonly" class="form-control">
+      </div>
+    </div>
+    
+    <!-- QUEBRA -->
+    <div class="col-md-36"></div>
+
+    <!-- OBJETOS DE REFERENCIA -->
+    <div class="col-md-16">
+      <div class="form-group">
+        <label for="">OBJ DE REFERENCIA:</label>
+        <select id="cc-dev-ide-grd-importar-obj-referencia" name="cc-dev-ide-grd-importar-obj-referencia" class="form-control">
+        </select>
+      </div>
+    </div>
+
+    <!-- LOTE -->
+    <div class="col-md-16 d-none">
+      <div class="form-group">
+        <label for=""> OBJ LOTE:</label>
+        <input type="text" id="cc-dev-ide-grd-importar-lote" name="cc-dev-ide-grd-importar-lote" readonly="readonly" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-36">
+      <ul class="list-inline">
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_obj_referencia"> OBJ_REFERENCIA</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_obj_nome"> OBJ_NOME</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_obj_seq"> OBJ_SEQ</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_col_nome"> COL_NOME</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_col_tp"> COL_TP</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_input_tp"> INPUT_TP</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_col_virtual"> COL_VIRTUAL</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_col_grid"> COL_GRID</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_col_grid_ordem"> COL_GRID_ORDEM</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_colspan"> COLSPAN</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_titulo"> TITULO</label></li>
+        <li><label class="cursor-pointer"><input type="checkbox" checked="checked" class='cc-dev-ide-grd-importar-tabela-colunas' value="cc_col_descricao"> DESCRICAO</label></li>
+      </ul>
+    </div>
+
+    <div class="col-md-36">
+      <table name="cc-dev-ide-grd-importar-tabela-inputs" id="cc-dev-ide-grd-importar-tabela-inputs"  class='table table-hover table-striped table-bordered table-sm'>
+        <thead class="thead-dark">
+          <th class="text-center cc_col_obj_referencia" width="350">obj_referencia</th>
+          <th class="text-center cc_col_obj_nome  cc_col_col_nome d-none" width="200">obj_nome</th>
+          <th class="text-center cc_col_obj_seq"width="50">obj_seq</th>
+          <th class="text-center cc_col_col_nome" width="200">col_nome</th>
+          <th class="text-center cc_col_col_tp" width="50">col_tp</th>
+          <th class="text-center cc_col_input_tp" width="50">input_tp</th>
+          <th class="text-center cc_col_col_virtual" width="50">col_virtual</th>
+          <th class="text-center cc_col_col_grid" width="100">col_grid</th>
+          <th class="text-center cc_col_col_grid_ordem" width="50">col_grid_ordem</th>
+          <th class="text-center cc_col_colspan" width="50">colspan</th>
+          <th class="text-center cc_col_titulo" width="300">titulo</th>
+          <th class="text-center cc_col_descricao" width="300">descricao</th>
+          <th class="text-center" width="50"><input type="checkbox" id="cc-dev-ide-grd-importar-check" name="cc-dev-ide-grd-importar-check"></th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-36">
+      <button class="btn btn-success btn-block" id="cc-dev-ide-grd-importar-btn" name="cc-dev-ide-grd-importar-btn">Importar</button>
+    </div>
+  </div>
+</div>

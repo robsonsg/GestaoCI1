@@ -1,0 +1,47 @@
+<!-- PROPRIEDADES -->
+<div name="cc-dev-ide-objetos" id="cc-dev-ide-objetos" class="modal-ccase-obj col-md-36 bg-light d-none">
+   <!-- TITULO -->
+   <h5 class="w-100 d-block text-uppercase border-bottom pt-0 pb-2">Criação de Objeto</h5>
+
+   <div class="col-md-6">
+      <div class="form-group">
+         <label for="">OBJ_TP: <em class="text-danger">*</em></label>
+         <select id="cc-dev-ide-objetos-obj-tp" name="cc-dev-ide-objetos-obj-tp" class="form-control"></select>
+      </div>
+   </div>
+
+   <div class="col-md-14">
+      <div class="form-group">
+         <label for="">OBJ_REFERENCIA <small>(pai)</small> <em class="text-danger">*</em>:</label>
+         <select type="text" id="cc-dev-ide-objetos-obj-referencia" name="cc-dev-ide-objetos-obj-referencia" class="form-control"></select>
+         <small id="cc-dev-ide-obj-referencia-carregar-mais" name="cc-dev-ide-obj-referencia-carregar-mais" class="text-primary w-100 cursor-pointer"><i class="fas fa-plus"></i> Carregar mais OBJETOS DE REFERÊNCIA</small>
+      </div>
+   </div>
+
+   <div class="col-md-14">
+      <div class="form-group">
+         <label for="">OBJ_NOME: <em class="text-danger">*</em></label>
+         <input type="text" id="cc-dev-ide-objetos-obj-nome" name="cc-dev-ide-objetos-obj-nome" class="form-control">
+      </div>
+   </div>
+   
+   <hr class="w-100">
+
+   <div class="col-md-4">
+      <div class="form-group">
+         <label for="">OBJ_SEQ: <em class="text-danger">*</em></label>
+         <input type="text" id="cc-dev-ide-objetos-obj-seq" name="cc-dev-ide-objetos-obj-seq" class="form-control">
+      </div>
+   </div>
+   
+   <div class="col-md-24">
+      <div class="form-group">
+         <label for="">OBJ_DSC:</label>
+         <input type="text" id="cc-dev-ide-objetos-obj-desc" name="cc-dev-ide-objetos-obj-desc" class="form-control">
+      </div>
+   </div>
+
+   <label class="d-none m-3 ml-4"><input type="checkbox" name="cc-dev-ide-objetos-abre-propriedades" checked="checked" id="cc-dev-ide-objetos-abre-propriedades"> Abrir as <strong>PROPRIEDADES</strong> após Criar o Objeto</label>
+   <hr class="w-100">
+   <button type="button" id="cc-dev-ide-objetos-btn" name="cc-dev-ide-objetos-btn" class="float-left mt-3 btn btn-block btn-success">CRIAR OBJETO</button>
+</div>

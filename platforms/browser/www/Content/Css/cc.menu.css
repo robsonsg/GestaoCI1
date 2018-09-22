@@ -1,0 +1,28 @@
+/* MENU */
+
+/* BG MENU */
+/*- cinza #E0E0E0
+- cinza-claro #F5F5F5
+- cinza-escuro #757575*/
+.bg-mnu{background: #E0E0E0;}
+
+/* DEFAULTS MENU */
+.cc-mnu.cc-mnu-on ul > li{display: inline;}
+.cc-mnu.cc-mnu-on ul > li a{display: inline-block;color: #757575;font-size: 12.5px;}
+.cc-mnu.cc-mnu-on ul > li li a{width: 100% !important;display: block !important}
+.cc-mnu.cc-mnu-on ul li li{display: inline-block;width: 100%}
+.cc-mnu.cc-mnu-on ul li{position: relative;}
+.cc-mnu.cc-mnu-on a:hover{text-decoration: none;background: #757575;color:#fff;}
+.cc-mnu.cc-mnu-on ul ul{position: absolute;display: none;min-width: 200px;background: #E0E0E0}
+.cc-mnu.cc-mnu-on ul ul{border-radius: 3px;}
+.cc-mnu.cc-mnu-on ul li:hover > ul{position: absolute;display: block;left: 0;z-index: 1000}
+.cc-mnu.cc-mnu-on ul ul li:hover > ul{position: absolute;display: block;left: 100%;z-index: 1000;top:0;}
+.cc-mnu.cc-mnu-on .cc-mnu-item-selected{background: #155fa0 !important;color:#fff !important;}
+.cc-mnu.cc-mnu-on .cc-mnu-item-selected > a{background: #155fa0 !important;color:#fff !important;}
+
+.cc-mnu.cc-mnu-off li,.cc-mnu.cc-mnu-off a{padding: 3px !important;margin:0 !important;font-size:11px !important;}
+.cc-mnu.cc-mnu-off ul ul{background: #d2d2d2 !important;left: 20px;position: relative;}
+.cc-mnu.cc-mnu-off ul ul ul{background: #cacaca !important;left: 50px;position: relative;}
+
+/* SUBMENU */
+.cc-submnu{background: #E0E0E0 !important;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;}

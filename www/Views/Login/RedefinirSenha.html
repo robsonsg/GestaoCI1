@@ -1,0 +1,185 @@
+﻿@model Syscare.Models.Login
+@{
+    Layout = null;
+    ViewBag.Title = "Redefinição de senha";
+}
+
+<head>
+    <!-- FORÇA JANELA DE LOGIN SER SEMPRE A JANELA PAI (FORA DOS FRAMES)-->
+    <script>
+        //if (window.self != window.top) top.window.location.href = self.window.location.href
+    </script>
+
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS LIBRARIES -->
+    @Styles.Render("~/Content/css-bootstrap")
+    @Styles.Render("~/Content/css-plugins")
+    @Styles.Render("~/Content/fonts")
+    @Styles.Render("~/Content/projeto")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/js-bootstrap")
+    @Scripts.Render("~/bundles/js-plugins")
+</head>
+
+<body class="splash-page page-login bg-light">
+
+    <input type="hidden" id="session_cnProfissional" value="@Request.RequestContext.HttpContext.Session["cnProfissional"]">
+    <input type="hidden" id="session_anProfissional" value="@Session["anProfissional"]" />
+
+    @*
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="loading">
+            <img class="wait-image" src="../Content/Images/wait-img.gif" />
+            <strong>Carregando...</strong>
+        </div>
+    *@
+
+    <script>
+        function loading() {
+            if ($('#user').val() != "" && $('#pass').val() != "" && $('#corp').val() != null) {
+                top.$("#loading").css({
+                    left: 0
+                }).addClass("show");
+                $(".entrar, #user, #pass, #corp").css("pointer-events", "none");
+            }
+        }
+
+        function closeLoading() {
+            top.$("#loading").css({
+                left: -200
+            });
+            $(".entrar, #user, #pass, #corp").css("pointer-events", "auto")
+        }
+        $(document).ready(function () {
+            closeLoading();
+        });
+    </script>
+
+    <!-- INICIO DO CONTAINER PRINCIPAL -->
+    <div class="container login mt-5">
+        <div class="row justify-content-md-center no-gutters">
+            <div class="col-sm-12 col-md-4 ">
+                @using (Html.BeginForm("RedefinirNovaSenha", "Login", FormMethod.Post, new { id = "form-login", enctype = "" }))
+                {
+                    //cria a tag do formulário
+                    @Html.AntiForgeryToken()
+
+                    // previne o ataque CSRF
+                    @Html.ValidationSummary(true)
+
+                    <!-- INICIO DO CONTAINER PRINCIPAL -->
+                    @TempData["variaveis"];
+
+                    <div class="col-md-10 m-auto mt-5 mb-5 bg-white border rounded p-5 float-none">
+                        <h3 class="control-label">@Html.Label(@Session["nmUsuario"].ToString(), htmlAttributes: new { @class = " " })</h3>
+                        <div class="form-group">
+                            <label>Usuário:</label>
+                            <input class="form-control" id="caLogin" name="caLogin" type="text" value="@Session["caLogin"]">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha atual:</label>
+                            <input class="form-control" data-val="true" data-val-length="O Campo [Senha Atual] deve contér no máximo 20 caracteres." data-val-length-max="20" data-val-required="Informe uma senha atual." id="anSenha" name="anSenha" placeholder="Senha" required="required" type="password">
+                        </div>
+                        <div class="form-group">
+                            <label>Nova Senha:</label>
+                            <input class="form-control" data-val="true" data-val-length="O Campo [Senha Atual] deve contér no máximo 20 caracteres." data-val-length-max="20" data-val-required="Informe uma [Nova Senha] atual." id="anNovaSenha" name="anNovaSenha" placeholder="Nova Senha" required="required" type="password">
+                        </div>
+                        <div class="form-group">
+                            <label>Repetir Nova Senha:</label>
+                            <input class="form-control" data-val="true" data-val-length="O Campo [Repetir  Nova Senha] deve contér no máximo 20 caracteres." data-val-length-max="20" data-val-required="Informe [Repetir Nova Senha]." id="anRepetirNovaSenha" name="anRepetirNovaSenha" placeholder="Repetir Nova Senha" required="required" type="password">
+                        </div>
+                        <div>
+                            @{
+                                if (TempData["Message"] != null)
+                                {
+                                    <ul style='border: 1px solid red'>
+                                        <li> @TempData["Message"] </li>
+                                    </ul>
+                                }
+                            }
+                        </div>
+                        <!-- CLI -->
+                        <input id="cli" name="cli" type="hidden" value="0">
+                        <!-- CLI -->
+                        <input id="cli" name="sys" type="hidden" value="GCI">
+                        <div class="form-group mt-4">
+                            <input type="submit" class="redefinir btn btn-block btn-lg btn-syscare-azul" value="Redefinir senha" />
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-block btn-dark text-uppercase" value="Entrar no Sistema" />
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <table border=1>
+        <tr><td>ALL_HTTP            </td><td>@HttpContext.Current.Request.ServerVariables["ALL_HTTP"]            </td></tr>
+        <tr><td>ALL_RAW             </td><td>@HttpContext.Current.Request.ServerVariables["ALL_RAW"]             </td></tr>
+        <tr><td>APPL_MD_PATH        </td><td>@HttpContext.Current.Request.ServerVariables["APPL_MD_PATH"]        </td></tr>
+        <tr><td>AUTH_TYPE           </td><td>@HttpContext.Current.Request.ServerVariables["AUTH_TYPE"]           </td></tr>
+        <tr><td>AUTH_PASSWORD       </td><td>@HttpContext.Current.Request.ServerVariables["AUTH_PASSWORD"]       </td></tr>
+        <tr><td>AUTH_USER           </td><td>@HttpContext.Current.Request.ServerVariables["AUTH_USER"]           </td></tr>
+        <tr><td>CERT_COOKIE         </td><td>@HttpContext.Current.Request.ServerVariables["CERT_COOKIE"]         </td></tr>
+        <tr><td>CERT_FLAGS          </td><td>@HttpContext.Current.Request.ServerVariables["CERT_FLAGS"]          </td></tr>
+        <tr><td>CERT_ISSUER         </td><td>@HttpContext.Current.Request.ServerVariables["CERT_ISSUER"]         </td></tr>
+        <tr><td>CERT_KEYSIZE        </td><td>@HttpContext.Current.Request.ServerVariables["CERT_KEYSIZE"]        </td></tr>
+        <tr><td>CERT_SECRETKEYSIZE  </td><td>@HttpContext.Current.Request.ServerVariables["CERT_SECRETKEYSIZE"]  </td></tr>
+        <tr><td>CERT_SERIALNUMBER   </td><td>@HttpContext.Current.Request.ServerVariables["CERT_SERIALNUMBER"]   </td></tr>
+        <tr><td>CERT_SERVER_ISSUER  </td><td>@HttpContext.Current.Request.ServerVariables["CERT_SERVER_ISSUER"]  </td></tr>
+        <tr><td>CERT_SERVER_SUBJECT </td><td>@HttpContext.Current.Request.ServerVariables["CERT_SERVER_SUBJECT"] </td></tr>
+        <tr><td>CONTENT_LENGTH      </td><td>@HttpContext.Current.Request.ServerVariables["CONTENT_LENGTH"]      </td></tr>
+        <tr><td>CONTENT_TYPE        </td><td>@HttpContext.Current.Request.ServerVariables["CONTENT_TYPE"]        </td></tr>
+        <tr><td>GATEWAY_INTERFACE   </td><td>@HttpContext.Current.Request.ServerVariables["GATEWAY_INTERFACE"]   </td></tr>
+        <tr><td>HTTPS               </td><td>@HttpContext.Current.Request.ServerVariables["HTTPS"]               </td></tr>
+        <tr><td>HTTPS_KEYSIZE       </td><td>@HttpContext.Current.Request.ServerVariables["HTTPS_KEYSIZE"]       </td></tr>
+        <tr><td>HTTPS_SECRETKEYSIZE </td><td>@HttpContext.Current.Request.ServerVariables["HTTPS_SECRETKEYSIZE"] </td></tr>
+        <tr><td>HTTPS_SERVER_ISSUER </td><td>@HttpContext.Current.Request.ServerVariables["HTTPS_SERVER_ISSUER"] </td></tr>
+        <tr><td>HTTPS_SERVER_SUBJECT</td><td>@HttpContext.Current.Request.ServerVariables["HTTPS_SERVER_SUBJECT"]</td></tr>
+        <tr><td>INSTANCE_ID         </td><td>@HttpContext.Current.Request.ServerVariables["INSTANCE_ID"]         </td></tr>
+        <tr><td>INSTANCE_META_PATH  </td><td>@HttpContext.Current.Request.ServerVariables["INSTANCE_META_PATH"]  </td></tr>
+        <tr><td>LOCAL_ADDR          </td><td>@HttpContext.Current.Request.ServerVariables["LOCAL_ADDR"]          </td></tr>
+        <tr><td>LOGON_USER          </td><td>@HttpContext.Current.Request.ServerVariables["LOGON_USER"]          </td></tr>
+        <tr><td>PATH_INFO           </td><td>@HttpContext.Current.Request.ServerVariables["PATH_INFO"]           </td></tr>
+        <tr><td>PATH_TRANSLATED     </td><td>@HttpContext.Current.Request.ServerVariables["PATH_TRANSLATED"]     </td></tr>
+        <tr><td>QUERY_STRING        </td><td>@HttpContext.Current.Request.ServerVariables["QUERY_STRING"]        </td></tr>
+        <tr><td>REMOTE_ADDR         </td><td>@HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"]         </td></tr>
+        <tr><td>REMOTE_HOST         </td><td>@HttpContext.Current.Request.ServerVariables["REMOTE_HOST"]         </td></tr>
+        <tr><td>REQUEST_METHOD      </td><td>@HttpContext.Current.Request.ServerVariables["REQUEST_METHOD"]      </td></tr>
+        <tr><td>SCRIPT_MAP          </td><td>@HttpContext.Current.Request.ServerVariables["SCRIPT_MAP"]          </td></tr>
+        <tr><td>SCRIPT_NAME         </td><td>@HttpContext.Current.Request.ServerVariables["SCRIPT_NAME"]         </td></tr>
+        <tr><td>SERVER_NAME         </td><td>@HttpContext.Current.Request.ServerVariables["SERVER_NAME"]         </td></tr>
+        <tr><td>SERVER_PORT         </td><td>@HttpContext.Current.Request.ServerVariables["SERVER_PORT"]         </td></tr>
+        <tr><td>SERVER_PORT_SECURE  </td><td>@HttpContext.Current.Request.ServerVariables["SERVER_PORT_SECURE"]  </td></tr>
+        <tr><td>SERVER_PROTOCOL     </td><td>@HttpContext.Current.Request.ServerVariables["SERVER_PROTOCOL"]     </td></tr>
+        <tr><td>SERVER_SOFTWARE     </td><td>@HttpContext.Current.Request.ServerVariables["SERVER_SOFTWARE"]     </td></tr>
+        <tr><td>URL                 </td><td>@HttpContext.Current.Request.ServerVariables["URL"]                 </td></tr>
+        <tr><td>HTTP_ACCEPT         </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_ACCEPT"]         </td></tr>
+        <tr><td>HTTP_ACCEPT_LANGUAGE</td><td>@HttpContext.Current.Request.ServerVariables["HTTP_ACCEPT_LANGUAGE"]</td></tr>
+        <tr><td>HTTP_CONNECTION     </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_CONNECTION"]     </td></tr>
+        <tr><td>HTTP_HOST           </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_HOST"]           </td></tr>
+        <tr><td>HTTP_REFERER        </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_REFERER"]        </td></tr>
+        <tr><td>HTTP_USER_AGENT     </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_USER_AGENT"]     </td></tr>
+        <tr><td>HTTP_COOKIE         </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_COOKIE"]         </td></tr>
+        <tr><td>HTTP_UA_CPU         </td><td>@HttpContext.Current.Request.ServerVariables["HTTP_UA_CPU "]        </td></tr>
+        <tr><td>HTTP_ACCEPT_ENCODING</td><td>@HttpContext.Current.Request.ServerVariables["HTTP_ACCEPT_ENCODING"]</td></tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+@Scripts.Render("~/bundles/js-bootstrap")
+@Scripts.Render("~/bundles/js-plugins")
+@Scripts.Render("~/bundles/principal")

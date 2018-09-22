@@ -1,0 +1,99 @@
+<!-- PROPRIEDADES -->
+<div name="cc-dev-ide-propriedades" id="cc-dev-ide-propriedades" class="modal-ccase-obj-100 col-md-36 bg-light d-none">
+  <!-- TITULO -->
+  <div class="row">
+    <h5 class="col-md-36 text-uppercase border-bottom pt-0 pb-2">Edição das Propriedades</h5>
+  </div>
+  <!-- TABELA > PROPRIEDADES -->
+  <div class="row">
+    <div class="col-md-23" id="cc-dev-ide-propriedades-tabela-bloco" name="cc-dev-ide-propriedades-tabela-bloco">
+      <table id="cc-dev-ide-propriedades-tabela" name="cc-dev-ide-propriedades-tabela" class="table table-xs table-hover bg-white table-striped table-bordered no-footer">
+        <thead class="thead-dark">
+          <th class="text-center">ID</th>
+          <th class="text-center">Propriedade</th>
+          <th class="text-center">Valor</th>
+          <th class="text-center">Grupo</th>
+          <th class="text-center">Prioridade</th>
+          <th class="text-center">Requerido</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!-- DADOS DO OBJETO -->
+    <div class="col-md-13 float-right" id="cc-dev-ide-propriedades-editor-bloco" name="cc-dev-ide-propriedades-editor-bloco">
+      <div class="col-md-36">
+        <div class="row">
+          <div class="col-36 p-3 rounded bg-white border mb-3 ml-3">
+            <h5 class="col-md-36 text-uppercase border-bottom pt-2 pb-2 pl-1">Dados do Objeto <button type="button" id="cc-dev-ide-propriedades-propriedade-editar-objeto" name="cc-dev-ide-propriedades-propriedade-editar-objeto" class="float-right btn btn-xs btn-primary col-md-12" style="margin-top: -6px;margin-bottom: 4px;">EDITAR OBJETO</button></h5>
+            <div class="row">
+              <!-- OBJ NOME -->
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="">ID:</label>
+                  <input type="text" id="cc-dev-ide-propriedades-id-obj" name="cc-dev-ide-propriedades-id-obj" readonly="readonly" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="">OBJ_SEQ:</label>
+                  <input type="text" id="cc-dev-ide-propriedades-obj-seq" name="cc-dev-ide-propriedades-obj-seq" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="">OBJ_TP:</label>
+                  <input type="text" readonly="readonly" id="cc-dev-ide-propriedades-obj-tp" name="cc-dev-ide-propriedades-obj-tp" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-33">
+                <div class="form-group">
+                  <label for="">OBJ_NOME:</label>
+                  <input type="text" id="cc-dev-ide-propriedades-obj-nome" name="cc-dev-ide-propriedades-obj-nome" class="form-control">
+                </div>
+              </div>
+              <button class="btn cc-btn-preto col-md-3 cc-dev-ide-propriedades-btn-busca-obj" name="cc-dev-ide-propriedades-btn-busca-obj" id="cc-dev-ide-propriedades-btn-busca-obj"><em class="fas fa-search"></em></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PROPRIEDADES DO OBJETO -->
+      <div class="col-md-36">
+        <div class="row">
+          <div class="col-36 p-3 rounded bg-white border mb-3 ml-3">
+            <h5 class="col-md-36 text-uppercase border-bottom pt-0 pb-2 pl-1">Dados da Propriedade</h5>
+            <div class="row">
+              <!-- ID -->
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label for="">ID</label>
+                  <input readonly="readonly" type="text" id="cc-dev-ide-propriedades-id" name="cc-dev-ide-propriedades-id" class="form-control">
+                </div>
+              </div>
+              <!-- NOME DA PROPRIEDADE -->
+              <div class="col-md-28">
+                <div class="form-group">
+                  <label for="">PROPRIEDADE:</label>
+                  <input type="text" id="cc-dev-ide-propriedades-propriedade" name="cc-dev-ide-propriedades-propriedade" class="form-control">
+                </div>
+              </div>
+              <!-- VALOR DA PROPRIEDADE -->
+              <div class="col-md-36 d-none">
+                <div class="form-group">
+                  <label for="">VALOR:</label>
+                  <textarea class="form-control" id="cc-dev-ide-propriedades-valor" name="cc-dev-ide-propriedades-valor" rows="10"></textarea>
+                </div>
+              </div>
+              <!-- EDITOR -->
+              <div class="col-md-36">
+                <label>VALOR:</label>
+                <div id="cc-ace-editor" name="cc-ace-editor" class="border shadow-sm cc-dev-ide-propriedades-valor"></div>
+              </div>
+              <label class="m-3 ml-4"><input type="checkbox" name="cc-dev-ace-editor-full-screen" id="cc-dev-ace-editor-full-screen"> Editor em Tela Cheia</label>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="cc-dev-ide-propriedades-btn" name="cc-dev-ide-propriedades-btn" class="float-left mt-3 btn btn-block btn-success">SALVAR PROPRIEDADE</button>
+      </div>
+    </div>
+  </div>
+</div>

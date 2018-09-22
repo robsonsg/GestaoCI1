@@ -1,0 +1,166 @@
+
+.cc-btn-tree{font-size: 12px;line-height: normal;}
+ tr.cc-grd-tree-nivel-1 td .cc-btn-tree{margin-left: 10px;}
+ tr.cc-grd-tree-nivel-2 td .cc-btn-tree{margin-left: 20px;}
+ tr.cc-grd-tree-nivel-3 td .cc-btn-tree{margin-left: 30px;}
+ tr.cc-grd-tree-nivel-4 td .cc-btn-tree{margin-left: 40px;}
+ tr.cc-grd-tree-nivel-5 td .cc-btn-tree{margin-left: 50px;}
+ tr.cc-grd-tree-nivel-6 td .cc-btn-tree{margin-left: 60px;}
+ tr.cc-grd-tree-nivel-7 td .cc-btn-tree{margin-left: 70px;}
+ tr.cc-grd-tree-nivel-8 td .cc-btn-tree{margin-left: 80px;}
+ tr.cc-grd-tree-nivel-9 td .cc-btn-tree{margin-left: 90px;}
+ tr.cc-grd-tree-nivel-10 td .cc-btn-tree{margin-left: 100px;}
+ tr.cc-grd-tree-nivel-10 td .cc-btn-tree{margin-left: 110px;}
+
+tr.cc-grd-tree-nivel-11 td{background-color:rgba(168,168,168,.7)}
+tr.cc-grd-tree-nivel-10 td{background-color:rgba(176,176,176,.7)}
+tr.cc-grd-tree-nivel-9 td{background-color:rgba(184,184,184,.7)}
+tr.cc-grd-tree-nivel-8 td{background-color:rgba(192,192,192,.7)}
+tr.cc-grd-tree-nivel-7 td{background-color:rgba(200,200,200,.7)}
+tr.cc-grd-tree-nivel-6 td{background-color:rgba(208,208,208,.7)}
+tr.cc-grd-tree-nivel-5 td{background-color:rgba(216,216,216,.7)}
+tr.cc-grd-tree-nivel-4 td{background-color:rgba(224,224,224,.7)}
+tr.cc-grd-tree-nivel-3 td{background-color:rgba(232,232,232,.7)}
+tr.cc-grd-tree-nivel-2 td{background-color:rgba(240,240,240,.7)}
+tr.cc-grd-tree-nivel-1 td{background-color:rgba(248,248,248,.5)}
+
+.cc-td-overlay{position: absolute;top:0;left: 0;bottom:0;left:0;background: rgba(0,0,0,.2);width: 100%;height: 100%;}
+.cc-mnu-item-selected{}
+
+h4 strong{color:#105888;}
+.modal-ccase-obj-100{max-width: 99.5% !important;z-index: 10000}
+.cursor-pointer{cursor:pointer !important;}
+.text-yellow{color:lightyellow;}
+.text-green{color:lightgreen;}
+.text-blue{color:lightblue;}
+.text-red{color:pink;}
+.text-gray{color:gray;}
+
+#cc-ace-editor{height: 400px;}
+
+.cc-blur{filter: blur(7px);-webkit-filter: blur(7px);}
+.cc-remove-rolagem{overflow: hidden !important;}
+
+.cc-dev-trace-line-count{color:#ccc;}
+
+/* TABS */
+.cc-fld-tab{float:left;margin-right: 1px}
+.cc-fld-tab > a{padding:10px;float:left;background:#ddd;border-radius:4px 4px 0 0;color:#424242;border: 1px solid #BABABA;font-size: 14px;border-bottom: 0;}
+.cc-fld-tab > a:hover{text-decoration:none;}
+.cc-fld-active > a{background:#105888;color:#fff;position: relative;bottom: -1px;padding: 10px 10px 11px 10px}
+.cc-fld-lista{border-bottom: 1px solid #BABABA}
+
+
+
+/* MENU DROPDOWN */
+ .cc-icon-margin{margin-right: 5px}
+ .font-style-normal{font-style: normal !important;}
+ 
+ @page {
+    margin: 1em;
+}
+
+ @media print {
+  body{margin:0;padding:0;}
+
+  #cc-modal-report-imoveis, #cc-modal-report, .cc-modal-blocker, .cc-modal{
+    overflow: visible !important;
+    width:100% !important;
+    height:100% !important;
+    position: absolute !important;
+  }
+
+  #cc-menu-agrupador {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  #cc-cabecalho-agrupador {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  #cc-conteudo-agrupador{
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  #cc-rodape-agrupador {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  #cc-modal-report{
+    width: 100% !important;
+    position: absolute !important;
+    top:0 !important;
+    left: 0 !important;
+  }
+  #cc-modal-report button{
+    display: none;
+  }
+
+  #cc-modal-report-imoveis span{font-size: 12px !important}
+  #cc-modal-report-imoveis span{font-size: 12px !important}
+
+  #cc-modal-relatorio,
+  #cc-modal-report-imoveis{
+    width: 100% !important;
+    position: absolute !important;
+    top:0 !important;
+    left: 0 !important;
+  };
+
+  #cc-modal-report-imoveis button{
+    display: none;
+  }
+
+  #cc-modal-report-dados > div{
+    page-break-after  : always;
+    page-break-before : always;
+    page-break-inside : avoid;
+  }
+
+  .cc-bloco{
+    page-break-after  : always;
+    page-break-before : always;
+    page-break-inside : avoid;
+  }
+
+  .cc-logo-modal{max-width: 200px;display: block !important;}
+
+}
+
+.cc-logo-modal{display: none;}
+
+.table-xtra-condensed > thead > tr > th,
+.table-xtra-condensed > tbody > tr > th,
+.table-xtra-condensed > tfoot > tr > th,
+.table-xtra-condensed > thead > tr > td,
+.table-xtra-condensed > tbody > tr > td,
+.table-xtra-condensed > tfoot > tr > td {
+  padding: 2px !important;
+  font-size: 12px !important;
+}
+
+.cc-modal{font-size: 12px;}
+.bg-gray{background: #e4e4e4 !important}
+.font-large{font-size: 18px;}
+.col-min-height{min-height: 65px;}
+
+.cc-border-aviso{box-shadow: #ffc107 0 0 0 2px;}
+.cc-border-sucesso{box-shadow: #28a745 0 0 0 2px;}
+.cc-border-erro{box-shadow: #dc3545 0 0 0 2px;}
+
+.cc-report-item{
+  float: none !important;
+  display: inline-block !important;
+}
+.cc-report-line{
+  float: none !important;
+  display: inline-block !important;
+}
+
+.cc-inp-label{
+  text-align: left;
+}

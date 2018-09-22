@@ -1,0 +1,12 @@
+/* PRINT CSS */
+
+@page {
+  margin: 1em;
+}
+
+@media print {
+  body{
+    margin:0;
+    padding:0;
+  }
+}

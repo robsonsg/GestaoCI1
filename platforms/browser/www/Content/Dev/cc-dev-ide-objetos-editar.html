@@ -1,0 +1,60 @@
+<!-- PROPRIEDADES -->
+<div name="cc-dev-ide-editar-objetos" id="cc-dev-ide-editar-objetos" class="modal-ccase-obj col-md-36 bg-light d-none">
+   <!-- TITULO -->
+   <h5 class="w-100 d-block text-uppercase border-bottom pt-0 pb-2">Edição de Objeto</h5>
+
+   <div class="col-md-4">
+      <div class="form-group">
+         <label for="">ID: <em class="text-danger">*</em></label>
+         <input type="text" id="cc-dev-ide-editar-objetos-obj-id" name="cc-dev-ide-editar-objetos-obj-id" readonly="readonly" class="form-control">
+      </div>
+   </div>
+   <div class="col-md-5">
+      <div class="form-group">
+         <label for="">OBJ_TP: <em class="text-danger">*</em></label>
+         <select id="cc-dev-ide-editar-objetos-obj-tp" name="cc-dev-ide-editar-objetos-obj-tp" class="form-control"></select>
+      </div>
+   </div>
+
+   <div class="col-md-12">
+      <div class="form-group">
+         <label for="">OBJ_REFERENCIA <small>(pai)</small> <em class="text-danger">*</em>:</label>
+         <select type="text" id="cc-dev-ide-editar-objetos-obj-referencia" name="cc-dev-ide-editar-objetos-obj-referencia" disabled="disabled" class="form-control"></select>
+      </div>
+   </div>
+
+   <div class="col-md-13">
+      <div class="form-group">
+         <label for="">OBJ_NOME: <em class="text-danger">*</em></label>
+         <input type="text"  readonly="readonly" id="cc-dev-ide-editar-objetos-obj-nome" name="cc-dev-ide-editar-objetos-obj-nome" class="form-control">
+      </div>
+   </div>
+   
+   <hr class="w-100">
+
+   <div class="col-md-4">
+      <div class="form-group">
+         <label for="">OBJ_SEQ: <em class="text-danger">*</em></label>
+         <input type="text" id="cc-dev-ide-editar-objetos-obj-seq" name="cc-dev-ide-editar-objetos-obj-seq" class="form-control">
+      </div>
+   </div>
+   
+   <div class="col-md-24">
+      <div class="form-group">
+         <label for="">OBJ_DSC:</label>
+         <input type="text" id="cc-dev-ide-editar-objetos-obj-desc" name="cc-dev-ide-editar-objetos-obj-desc" class="form-control">
+      </div>
+   </div>
+
+   <label class="m-3 ml-4"><input type="checkbox" name="cc-dev-ide-editar-objetos-abre-propriedades" checked="checked" id="cc-dev-ide-editar-objetos-abre-propriedades"> Abrir as <strong>PROPRIEDADES</strong> após Salvar o Objeto</label>
+   <hr class="w-100">
+   <div class="col-md-6">
+      <button type="button" id="cc-dev-ide-editar-objetos-btn" name="cc-dev-ide-editar-objetos-btn" class="float-left mt-3 btn btn-block btn-success">SALVAR OBJETO</button>
+   </div>
+   <div class="col-md-8">
+      <button type="button" id="cc-dev-ide-editar-objetos-btn-propriedades" name="cc-dev-ide-editar-objetos-btn-propriedades" class="float-left mt-3 btn btn-block btn-primary">EDITAR PROPRIEDADES</button>
+   </div>
+   <div class="col-md-6">
+      <button type="button" id="cc-dev-ide-editar-objetos-btn-excluir" name="cc-dev-ide-editar-objetos-btn-excluir" class="float-left mt-3 btn btn-block btn-danger">EXCLUIR OBJETO</button>
+   </div>
+</div>

@@ -1,0 +1,7 @@
+/* TABS */
+.cc-fld-tab{float:left;margin-right: 1px}
+.cc-fld-tab > a{padding:10px;float:left;background:#E0E0E0;border-radius:4px 4px 0 0;color:#757575;border: 1px solid #e0e0e0;font-size: 14px;border-bottom: 0;}
+.cc-fld-tab > a:hover{text-decoration:none;}
+.cc-fld-active > a{background:#155fa0;color:#fff;position: relative;bottom: -1px;padding: 10px 10px 11px 10px}
+.cc-fld-lista{border-bottom: 1px solid #e0e0e0}
+.cc-fld-readonly a{background:#ececec !important;color:#c7c7c7 !important;cursor: not-allowed}
